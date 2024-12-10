@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "Title": "\u00C1llj f\u00E9lre a saj\u00E1t utadb\u00F3l",
+    "Author": "Szab\u00F3 P\u00E9ter",
+    "IsRead": true,
+    "Notes": [
+      {
+        "Id": 1,
+        "Title": "A puding pr\u00F3b\u00E1ja",
+        "Content": "1.\u00C9bred\u00E9s ut\u00E1n pozit\u00EDv gondolatok, a nap elk\u00E9pzel\u00E9se pozit\u00EDvan\n2.Arra figyelj ami j\u00F3l siker\u00FCl ne arra ami rosszul; a t\u00E9ved\u00E9sekre, hib\u00E1kra sokkal tov\u00E1bb eml\u00E9ksz\u00FCnk ami nem j\u00F3, \u00E9s m\u00E9di\u00E1b\u00F3l is csak a negat\u00EDvat kapjuk; a h\u00EDrad\u00F3ban azt mondj\u00E1k n\u00E9ha borult lesz az id\u0151 \u00E9s nem azt hogy t\u00FAlnyom\u00F3 r\u00E9szben s\u00FCtni fog a nap\n3.Mindenben van valami j\u00F3 \u00E9s azt kell megl\u00E1tni; \u0022\u00FAgysem tudtok \u00E1tverni! Ahol ennyi l\u00F3citrom van, ott egy p\u00F3ninak is lennie kell!\u0022\n4.Minden nap sz\u00E1nj egy percet magadra, \u00E1llj a t\u00FCk\u00F6r el\u00E9 \u00E9s mosolyogj; \u0022Ne vedd t\u00FAl komolyan az \u00E9letet, \u00FAgysem \u00FAszod meg \u00E9lve\u0022, ez a gyakorlat ereje a megford\u00EDthat\u00F3s\u00E1g t\u00F6rv\u00E9ny\u00E9ben rejlik, eszerint az, ahogyan bel\u00FCl \u00E9rzed magad, egy bizonyos k\u00FCls\u0151 reakci\u00F3t v\u00E1lt ki bel\u0151led, ugyanakkor az is igaz, hogy ha megfelel\u0151 ideig produk\u00E1lod ezt a bizonyos k\u00FCls\u0151 megnyilv\u00E1nul\u00E1st, ki fogja v\u00E1ltani a hozz\u00E1 tartoz\u00F3 bels\u0151 \u00E9rz\u00E9st\n5.H\u00FAzd ki magad\n6.\u00DCnnepeld meg magad\n7.Ne hasonl\u00EDtgasd magad m\u00E1sokhoz; ne m\u00E1sokhoz m\u00E9rj\u00FCk magunkat, hanem a saj\u00E1t fejl\u0151d\u00E9s\u00FCnkre \u00F6sszpontos\u00EDtsunk\n8.Tartsd be az \u00EDg\u00E9reteket; nagyon j\u00F3l vizsg\u00E1ld meg, mi az, amit meg\u00EDg\u00E9rsz, miel\u0151tt elk\u00F6telezn\u00E9d magad, ink\u00E1bb t\u00F6bb kisebb dolgot \u00EDg\u00E9rj meg magadnak, amelyek megval\u00F3s\u00EDt\u00E1s\u00E1val siker\u00E9lm\u00E9nyt gener\u00E1lsz"
+      },
+      {
+        "Id": 2,
+        "Title": null,
+        "Content": "Az, amire v\u00E1gyunk, \u00E9s az, amir\u0151l m\u00E9lyen legbel\u00FCl el is hissz\u00FCk, hogy val\u00F3ban meg\u00E9rdemelj\u00FCk, teljesen elt\u00E9rhet egym\u00E1st\u00F3l.\nAz \u00E9letben minden csup\u00E1n v\u00E1laszt\u00E1s k\u00E9rd\u00E9se. Minden alkalommal, amikor valamire igent mondunk, azzal valami m\u00E1sra automatikusan nemet.\n"
+      },
+      {
+        "Id": 3,
+        "Title": "Megbocs\u00E1t\u00E1s",
+        "Content": "A val\u00F3di megbocs\u00E1t\u00E1st minden esetben megel\u0151zi az elfogad\u00E1s. Az elfogad\u00E1s igen fontos ter\u00FCletei a m\u00FAlt, \u00F6nmagunk \u00E9s a t\u00F6bbi ember felt\u00E9tel n\u00E9lk\u00FCli elfogad\u00E1sa.\n\u0022Nem szabad folyamatosan a m\u00FAlton r\u00E1g\u00F3dni. Hiszen az olyan, mintha \u00FAgy pr\u00F3b\u00E1ln\u00E1l az aut\u00F3ddal el\u0151rehaladni, hogy csak a visszapillant\u00F3t haszn\u00E1lod.\u0022\nAmi a m\u00FAltat illeti, egyetlen dolgot tehet\u00FCnk, m\u00E9gpedig, hogy elfogadjuk olyannal amilyen, hiszen a m\u00FAltban t\u00F6rt\u00E9nteken v\u00E1ltoztatni k\u00E9ptelens\u00E9g. Az egyetlen, amin v\u00E1ltoztatni lehet az, ahogyan a m\u00FAlthoz viszonyulunk.\nA megbocs\u00E1t\u00E1snak semmi k\u00F6ze a m\u00E1sik f\u00E9lhez, kiz\u00E1r\u00F3lag \u00F3nos \u00E9rdek. A felh\u0151tlen\u00FCl boldog \u00E9lethez vezet\u0151 ajt\u00F3t a megbocs\u00E1t\u00E1s nyitja meg.\n"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Title": "\u00C9rvel\u00E9s",
+    "Author": "Jonathan Herring",
+    "IsRead": false,
+    "Notes": []
+  },
+  {
+    "Id": 3,
+    "Title": "A k\u00EDv\u00FCl\u00E1ll\u00F3",
+    "Author": "Stephen King",
+    "IsRead": true,
+    "Notes": [
+      {
+        "Id": 1,
+        "Title": null,
+        "Content": "Ha nem tudod elengedni a m\u00FAltat, a t\u00E9ved\u00E9seid \u00E9lve felfalnak.\n"
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "Title": "Min\u00E9l v\u00E9resebb",
+    "Author": "Stephen King",
+    "IsRead": false,
+    "Notes": [
+      {
+        "Id": 1,
+        "Title": "MR. Harrigan",
+        "Content": "Craig, ritk\u00E1n adok tan\u00E1csot, mert szinte mindig s\u00FCket f\u00FClekre tal\u00E1l."
+      }
+    ]
+  }
+]

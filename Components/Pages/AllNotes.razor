@@ -1,0 +1,46 @@
+﻿@page "/allnotes"
+@inject DataService DataService
+@inject NavigationManager NavigationManager
+@using booknote.Components.Models
+@using booknote.Components.Services
+
+<div class="containerNotes">
+    <div class="notes-container">
+        @foreach (var book in Books)
+        {
+            @foreach (var note in book.Notes)
+            {
+                <div class="note-card">
+                    <h4>@note.Title</h4>
+                    <pre>@note.Content</pre>
+                    <p class="book-title">From: @book.Title</p>
+                    <div class="button-container-all">
+                        <button @onclick="() => EditNote(book.Id, note.Id)">Edit</button>
+                        <button @onclick="() => DeleteNoteAsync(book.Id, note.Id)">Delete</button>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+
+@code {
+    private List<Book> Books = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await DataService.GetBooksAsync();
+    }
+
+    private void EditNote(int bookId, int noteId)
+    {
+        NavigationManager.NavigateTo($"/noteform/{bookId}/{noteId}");
+    }
+
+    private async Task DeleteNoteAsync(int bookId, int noteId)
+    {
+        await DataService.DeleteNoteAsync(bookId, noteId);
+        Books = await DataService.GetBooksAsync();
+    }
+}

@@ -1,0 +1,50 @@
+﻿@page "/noteform/{bookId:int}/{noteId:int?}"
+@inject DataService DataService
+@inject NavigationManager NavigationManager
+@using booknote.Components.Models
+@using booknote.Components.Services
+
+<div class="container">
+    <h3>@(IsEditMode ? "Edit Note" : "Add New Note")</h3>
+    <div>
+        <label>Title:</label>
+        <input @bind="note.Title"/>
+    </div>
+    <div>
+        <label>Content:</label>
+        <textarea class="contentText" @bind="note.Content"></textarea>
+    </div>
+    <button @onclick="SaveNote">@((IsEditMode ? "Save Changes" : "Add Note"))</button>        
+</div>
+
+@code {
+    [Parameter]
+    public int bookId { get; set; }
+    [Parameter]
+    public int? noteId { get; set; }
+
+    private Note note { get; set; } = new Note();
+    private bool IsEditMode => !string.IsNullOrEmpty(noteId.ToString());
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (IsEditMode)
+        {
+            var book = await DataService.GetBookByIdAsync(bookId);
+            note = book.Notes.FirstOrDefault(n => n.Id == noteId.Value) ?? new Note();
+        }
+    }
+
+    private async Task SaveNote()
+    {
+        if (IsEditMode)
+        {
+            await DataService.EditNoteAsync(bookId, note);
+        }
+        else
+        {
+            await DataService.AddNoteAsync(bookId, note);
+        }
+        NavigationManager.NavigateTo($"/notes/{bookId}");
+    }
+}

@@ -1,0 +1,55 @@
+﻿@page "/notes/{bookId:int}"
+@inject DataService DataService
+@inject NavigationManager NavigationManager
+@using booknote.Components.Models
+@using booknote.Components.Services
+
+<div class="containerNotes">
+<h3>@Book.Title - Notes</h3>
+
+<div class="notes-container">
+    @foreach (var note in Book.Notes)
+    {
+        <div class="note-card">
+            <h4>@note.Title</h4>
+            <pre>@note.Content</pre>
+            <div class="button-container">
+                <button @onclick="() => EditNote(note.Id)">Edit</button>
+                <button @onclick="() => DeleteNoteAsync(note.Id)">Delete</button>
+            </div>
+        </div>
+    }
+</div>
+</div>
+
+<div class="add-note-container">
+    <button @onclick="AddNewNote">Add New Note</button>
+</div>
+
+@code {
+    [Parameter]
+    public int BookId { get; set; }
+
+    private Book Book { get; set; } = new Book();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Book = await DataService.GetBookByIdAsync(BookId);
+    }
+
+    private void AddNewNote()
+    {
+        NavigationManager.NavigateTo($"/noteform/{BookId}");
+    }
+
+    private void EditNote(int noteId)
+    {
+        NavigationManager.NavigateTo($"/noteform/{BookId}/{noteId}");
+    }
+
+    private async Task DeleteNoteAsync(int noteId)
+    {
+        await DataService.DeleteNoteAsync(BookId, noteId);
+        Book = await DataService.GetBookByIdAsync(BookId);
+    }
+}

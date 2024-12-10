@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\booknote.bundle.scp.css",
+      "PackagePath": "staticwebassets\\booknote.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\Data\\books.json",
+      "PackagePath": "staticwebassets\\Data\\books.json"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\css\\forms.css",
+      "PackagePath": "staticwebassets\\css\\forms.css"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\css\\notes.css",
+      "PackagePath": "staticwebassets\\css\\notes.css"
+    },
+    {
+      "Id": "C:\\Users\\2003k\\Downloads\\booknote\\booknote\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.booknote.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.booknote.props",
+      "PackagePath": "build\\booknote.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.booknote.props",
+      "PackagePath": "buildMultiTargeting\\booknote.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.booknote.props",
+      "PackagePath": "buildTransitive\\booknote.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

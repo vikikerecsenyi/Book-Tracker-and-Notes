@@ -1,0 +1,89 @@
+﻿.book-container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0;
+    background-color: #2e2e2e;
+}
+
+.left-page, .right-page {
+    padding: 2rem;
+    background-color: #3e3e3e;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    color: #d1c4e9;
+}
+
+.left-page {
+    text-align: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right-page {
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #d1c4e9;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: #d1c4e9;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #d1c4e9;
+    justify-content: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+    color: #d1c4e9;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #4e4e4e;
+}
+
+tr:nth-child(odd) {
+    background-color: #3a3a3a;
+}
+
+tr:nth-child(even) {
+    background-color: #4a4a4a;
+}
+
+a {
+    color: #d1c4e9;
+}
+
+::deep .nav-link {
+    color: #3a0647;
+}
+
+    ::deep .nav-link:hover {
+        color: #3a0647;
+    }

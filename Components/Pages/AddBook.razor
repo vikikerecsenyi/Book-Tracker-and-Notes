@@ -1,0 +1,52 @@
+﻿@page "/addbook/{bookId:int?}"
+@inject NavigationManager NavigationManager
+@inject DataService DataService
+@using booknote.Components.Services
+@using booknote.Components.Models
+
+<div class="container">
+    <h3>@(IsEditMode ? "Edit Book" : "Add New Book")</h3>
+    <div>
+        <label>Title:</label>
+        <input @bind="newBook.Title" />
+    </div>
+    <div>
+        <label>Author:</label>
+        <input @bind="newBook.Author" />
+    </div>
+    <div>
+        <label>Is Read:</label>
+        <input type="checkbox" @bind="newBook.IsRead" />
+    </div>
+    <button @onclick="SaveBook">@(IsEditMode ? "Edit Book" : "Add Book")</button>
+</div>
+
+@code {
+    [Parameter] public int? bookId { get; set; }
+    private Book newBook = new Book { IsRead = false };
+    private bool IsEditMode => !string.IsNullOrEmpty(bookId.ToString());
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (IsEditMode)
+        {
+            var books = await DataService.GetBooksAsync();
+            newBook = books.FirstOrDefault(b => b.Id == bookId.Value) ?? new Book { IsRead = false };
+        }
+    }
+
+    private async Task SaveBook()
+    {
+        if (bookId.HasValue)
+        {
+            await DataService.UpdateBookAsync(newBook);
+        }
+        else
+        {
+            await DataService.AddBookAsync(newBook);
+        }
+        NavigationManager.NavigateTo("/");
+    }
+}
+
+
